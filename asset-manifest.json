@@ -1,21 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.7480e04e.chunk.css",
-    "main.js": "/static/js/main.55f60dbe.chunk.js",
-    "main.js.map": "/static/js/main.55f60dbe.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.242d75e8.js",
-    "runtime-main.js.map": "/static/js/runtime-main.242d75e8.js.map",
-    "static/js/2.a4558aa5.chunk.js": "/static/js/2.a4558aa5.chunk.js",
-    "static/js/2.a4558aa5.chunk.js.map": "/static/js/2.a4558aa5.chunk.js.map",
+    "main.css": "/static/css/main.b504044f.css",
+    "main.js": "/static/js/main.ba5fc799.js",
+    "static/js/787.b686313b.chunk.js": "/static/js/787.b686313b.chunk.js",
     "index.html": "/index.html",
-    "static/css/main.7480e04e.chunk.css.map": "/static/css/main.7480e04e.chunk.css.map",
-    "static/js/2.a4558aa5.chunk.js.LICENSE.txt": "/static/js/2.a4558aa5.chunk.js.LICENSE.txt",
-    "static/media/omakuva300.285ea9d0.jpg": "/static/media/omakuva300.285ea9d0.jpg"
+    "main.b504044f.css.map": "/static/css/main.b504044f.css.map",
+    "main.ba5fc799.js.map": "/static/js/main.ba5fc799.js.map",
+    "787.b686313b.chunk.js.map": "/static/js/787.b686313b.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.242d75e8.js",
-    "static/js/2.a4558aa5.chunk.js",
-    "static/css/main.7480e04e.chunk.css",
-    "static/js/main.55f60dbe.chunk.js"
+    "static/css/main.b504044f.css",
+    "static/js/main.ba5fc799.js"
   ]
 }
