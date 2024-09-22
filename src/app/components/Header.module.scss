@@ -1,0 +1,50 @@
+@import "../variables.module.scss";
+
+.header {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  grid-area: header;
+  position: fixed;
+  top: 0;
+  transition: 1s;
+}
+
+.filledBackground {
+  background-color: rgb(from $background r g b / 0.5);
+  backdrop-filter: blur(4px);
+  transition: 1s;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a, .logo {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: $foreground;
+  padding: 8pt 16pt;
+  cursor: pointer;
+  min-height: 48px;
+}
+
+.logo {
+  
+}
+
+.navMenu {
+  margin: 4px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .nav a:hover {
+    color: $foreground-hover;
+  }
+}

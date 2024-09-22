@@ -1,0 +1,97 @@
+@import "../variables.module.scss";
+
+.view {
+    display: grid;
+    padding: 40pt;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.viewContainer {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.viewContainer h1 {
+    padding-bottom: 20px;
+    font-size: 2rem;
+}
+
+.aboutMeContainer {
+    display: grid;
+    grid-template-columns: min-content repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+
+    .heroIcon {
+        grid-column: 1;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    .heroText {
+        grid-column: 2 / span 2;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: start;
+    }
+}
+
+@media (max-width: 600px) {
+    .aboutMeContainer {
+        grid-template-columns: 1fr;
+
+        .heroIcon {
+            grid-row: 1;
+        }
+
+        .heroText {
+            grid-column: 1;
+            grid-row: 2;
+        }
+    }
+}
+
+.hero {
+    background: radial-gradient(circle, $background-secondary, $background-secondary 20%, $background 100%);
+    width: 100%;
+    height: 100dvh;
+}
+
+.hero p {
+    font-size: x-large;
+}
+
+.about {
+    background-color: rgb(117, 139, 179);
+    width: 100%;
+    height: fit-content;
+    min-height: 500px;
+
+    .listContainer {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        align-items: center;
+        text-align: start;
+        gap: 5px 15px;
+    }
+}
+
+.projects {
+    background-color: rgb(172, 162, 162);
+    width: 100%;
+    height: 500pt;
+}
+
+.contacts {
+    background-color: rgb(180, 131, 154);
+    width: 100%;
+    height: 500pt;
+}

@@ -1,0 +1,15 @@
+$background: #0a0a0a;
+$background-secondary: #2c2c2c;
+$foreground: #ededed;
+$foreground-hover: #b3b3b3;
+$primary: #6ff700;
+$secondary: #f7e700;
+
+:export {
+    background: $background;
+    backgroundSecondary: $background-secondary;
+    foreground: $foreground;
+    foregroundHover: $foreground-hover;
+    primary: $primary;
+    secondary: $secondary;
+}

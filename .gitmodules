@@ -1,3 +1,0 @@
-[submodule "maze-generator"]
-	path = maze
-	url = https://github.com/jopakka/maze-generator
