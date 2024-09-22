@@ -1,6 +1,9 @@
 import IconAndroid from "./icons/IconAndroid";
 import IconCloud from "./icons/IconCloud";
+import IconCode from "./icons/IconCode";
+import IconGym from "./icons/IconGym";
 import IconKotlin from "./icons/IconKotlin";
+import IconVideoGame from "./icons/IconVideoGame";
 import IconWebhook from "./icons/IconWebhook";
 
 const AppData = Object.freeze({
@@ -27,6 +30,18 @@ const AppData = Object.freeze({
     {
       icon: IconCloud,
       text: "Google Cloud Services",
+    },
+    {
+      icon: IconCode,
+      text: "MVVM",
+    },
+    {
+      icon: IconVideoGame,
+      text: "Video Games",
+    },
+    {
+      icon: IconGym,
+      text: "Gym",
     },
   ]
 })
