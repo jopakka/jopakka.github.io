@@ -8,6 +8,7 @@ const IconClose = (props: BaseIcon) => (
     height={24}
     fill="#ededed"
     viewBox="0 -960 960 960"
+    aria-label="Close"
     {...props}
   >
     <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />

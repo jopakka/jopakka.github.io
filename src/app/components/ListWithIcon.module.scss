@@ -1,0 +1,14 @@
+.listContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  text-align: start;
+  gap: 5px;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}

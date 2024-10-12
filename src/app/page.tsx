@@ -23,10 +23,10 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <SideNavigationDrawer
-          isVisible={isSideDrawerVisible}
-          onDismissRequest={() => setIsSideDrawerVisible(false)}
-          navigationItems={navItems}
-        />
+        isVisible={isSideDrawerVisible}
+        onDismissRequest={() => setIsSideDrawerVisible(false)}
+        navigationItems={navItems}
+      />
       <Header
         navigationItems={navItems}
         onMenuClicked={() => setIsSideDrawerVisible(true)}
@@ -37,7 +37,9 @@ export default function Home() {
         <Projects />
         <Contacts />
       </section>
-      <Footer />
+      <Footer>
+        <p>© 2024 Joonas Niemi</p>
+      </Footer>
     </div>
   );
 }

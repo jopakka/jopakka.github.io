@@ -1,4 +1,4 @@
-import { ReactElement, useCallback, useMemo } from "react";
+import { ReactElement, useCallback, useEffect, useMemo } from "react";
 import IconClose from "../icons/IconClose";
 import NavigationItem from "../model/NavigationItem";
 import Drawer from "./Drawer";
@@ -17,10 +17,10 @@ export default function SideNavigationDrawer({
 }: SideNavigationDrawerProps) {
   const allLinks = useMemo(() => {
     return [
-      {id: "thisIsMe", label: "Joonas Niemi", link: "#"},
-      ...navigationItems
-    ]
-  }, [navigationItems])
+      { id: "thisIsMe", label: "Joonas Niemi", link: "#" },
+      ...navigationItems,
+    ];
+  }, [navigationItems]);
 
   const onLinkClick = useCallback(
     (item: NavigationItem) => {
@@ -29,6 +29,18 @@ export default function SideNavigationDrawer({
     },
     [onDismissRequest]
   );
+
+  useEffect(() => {
+    if (!isVisible) return;
+
+    const style = document.documentElement.style;
+    const prev = style.overflow;
+    style.overflow = "hidden";
+
+    return () => {
+      style.overflow = prev;
+    }
+  }, [isVisible])
 
   return (
     <Drawer isVisible={isVisible}>

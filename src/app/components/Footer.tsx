@@ -1,9 +1,14 @@
+import { ReactNode } from "react";
 import styles from "./Footer.module.scss";
 
-export default function Footer() {
+export interface FooterProps {
+  children: ReactNode;
+}
+
+export default function Footer({children}: FooterProps) {
   return (
     <footer className={styles.footer}>
-      <p>Footer</p>
+      {children}
     </footer>
   );
 }

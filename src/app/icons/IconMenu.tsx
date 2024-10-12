@@ -8,6 +8,7 @@ const IconMenu = (props: BaseIcon) => {
       height={24}
       fill="#ededed"
       viewBox="0 -960 960 960"
+      aria-label="Menu"
       {...props}
     >
       <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />

@@ -34,7 +34,14 @@ export default function Header({
       }`}
     >
       <div className={styles.logo}>
-        <IconJoonasFull fill={variables.primary} onClick={logoOnClick} />
+        <IconJoonasFull
+          fill={variables.primary}
+          onClick={logoOnClick}
+          aria-label="Logo"
+          tabIndex={0}
+          onKeyDown={logoOnClick}
+          role="button"
+        />
       </div>
       <nav className={styles.nav}>
         {isSmallScreen ? (
