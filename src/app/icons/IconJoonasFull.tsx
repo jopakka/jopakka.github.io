@@ -7,6 +7,7 @@ const IconJoonasFull = (props: BaseIcon) => (
     width={96.325}
     height={24}
     viewBox="0 0 96.325 24"
+    aria-label="Joonas logo"
     {...props}
   >
     <path

@@ -8,6 +8,7 @@ const IconKotlin = (props: BaseIcon) => (
     width={24}
     height={24}
     viewBox="0 0 24 24"
+    aria-label="Kotlin logo"
     {...props}
   >
     <g transform="matrix(.04 0 0 .04 2 2)">

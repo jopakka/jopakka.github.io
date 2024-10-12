@@ -9,6 +9,7 @@
   position: fixed;
   top: 0;
   transition: 1s;
+  z-index: 90;
 }
 
 .filledBackground {
@@ -29,10 +30,6 @@
   padding: 8pt 16pt;
   cursor: pointer;
   min-height: 48px;
-}
-
-.logo {
-  
 }
 
 .navMenu {
